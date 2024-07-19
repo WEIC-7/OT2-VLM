@@ -33,7 +33,7 @@ git clone https://www.modelscope.cn/ZhipuAI/glm-4v-9b.git
 ```
 ## 🌈 数据构造
 
-- 以下是 `GLM-4 数据集` 结构：
+- #### **GLM-4V数据集格式** ####
 ```plaintext
 "messages": [
                 {
@@ -79,7 +79,7 @@ git clone https://www.modelscope.cn/ZhipuAI/glm-4v-9b.git
 
 ![示例图片](./image/阶段三数据L.png)
 
-- #### **GLM-4V数据集格式** ####
+
 
 ## 🚀 模型微调
 - GLM-4v-9b微调
