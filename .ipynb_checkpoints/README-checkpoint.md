@@ -53,9 +53,11 @@ git clone https://www.modelscope.cn/ZhipuAI/glm-4v-9b.git
 
 
 <div style="text-align: center;">
-    <img src="./image/阶段二数据1.png" alt="示例图片 1">
-    <img src="./image/阶段二数据2.png" alt="示例图片 2">
+    <img src="./image/阶段二数据1.png" alt="示例图片 1" style="max-width: 120%; height: auto;">
+    <img src="./image/阶段二数据2.png" alt="示例图片 2" style="max-width: 120%; height: auto;">
 </div>
+
+
 
 
 - #### **全局弱引导学习数据集** ####
