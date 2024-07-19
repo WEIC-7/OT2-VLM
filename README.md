@@ -40,7 +40,7 @@ git clone https://www.modelscope.cn/ZhipuAI/glm-4v-9b.git
      - 从CSV转为GLM-4V需求的数据格式
 
 
-![示例图片](./VLM_Related_Code/阶段一数据.png)
+![示例图片](./image/阶段一数据.png)
 
 
     
@@ -52,7 +52,7 @@ git clone https://www.modelscope.cn/ZhipuAI/glm-4v-9b.git
      - 从CSV转为GLM-4V需求的数据格式
 
 
-![示例图片](./VLM_Related_Code/阶段二数据1.png) ![示例图片](./VLM_Related_Code/阶段二数据2.png)
+![示例图片](./image/阶段二数据1.png) ![示例图片](./image/阶段二数据2.png)
 
 
 - #### **全局弱引导学习数据集** ####
@@ -62,7 +62,7 @@ git clone https://www.modelscope.cn/ZhipuAI/glm-4v-9b.git
      - [预计]从文本中获取QA和图像地址构造CSV
      - [预计]从CSV转为GLM-4V需求的数据格式
 
-![示例图片](./VLM_Related_Code/阶段三数据.png)
+![示例图片](./image/阶段三数据.png)
 
 - #### **GLM-4V数据集格式** ####
 
