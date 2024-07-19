@@ -51,13 +51,8 @@ git clone https://www.modelscope.cn/ZhipuAI/glm-4v-9b.git
      - 从文本中获取QA和图像地址构造CSV
      - 从CSV转为GLM-4V需求的数据格式
 
-
-<div style="text-align: center;">
-    <img src="./image/阶段二数据1.png" alt="示例图片 1" style="max-width: 200%; height: auto;">
-    <img src="./image/阶段二数据2.png" alt="示例图片 2" style="max-width: 200%; height: auto;">
-</div>
-
-
+![示例图片](./image/阶段二数据1L.png)
+![示例图片](./image/阶段二数据2L.png)
 
 
 - #### **全局弱引导学习数据集** ####
