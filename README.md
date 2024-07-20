@@ -1,31 +1,3 @@
-# SWIFT (Scalable lightWeight Infrastructure for Fine-Tuning)
-
-<p align="center">
-    <br>
-    <img src="resources/banner.png"/>
-    <br>
-<p>
-<p align="center">
-<a href="https://modelscope.cn/home">ModelScope Community Website</a>
-<br>
-        <a href="README_CN.md">中文</a> &nbsp ｜ &nbsp English &nbsp
-</p>
-
-<p align="center">
-<img src="https://img.shields.io/badge/python-%E2%89%A53.8-5be.svg">
-<img src="https://img.shields.io/badge/pytorch-%E2%89%A51.12%20%7C%20%E2%89%A52.0-orange.svg">
-<a href="https://github.com/modelscope/modelscope/"><img src="https://img.shields.io/badge/modelscope-%E2%89%A51.9.5-5D91D4.svg"></a>
-<a href="https://pypi.org/project/ms-swift/"><img src="https://badge.fury.io/py/ms-swift.svg"></a>
-<a href="https://github.com/modelscope/swift/blob/main/LICENSE"><img src="https://img.shields.io/github/license/modelscope/swift"></a>
-<a href="https://pepy.tech/project/ms-swift"><img src="https://pepy.tech/badge/ms-swift"></a>
-<a href="https://github.com/modelscope/swift/pulls"><img src="https://img.shields.io/badge/PR-welcome-55EB99.svg"></a>
-</p>
-
-<p align="center">
-<a href="https://trendshift.io/repositories/6427" target="_blank"><img src="https://trendshift.io/api/badge/repositories/6427" alt="modelscope%2Fswift | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
-</p>
-
-
 ##  📖 目录
 - [简介](#-简介)
 - [安装](#-%EF%B8%8F-安装)
@@ -36,6 +8,7 @@
 - [端侧部署](#-端侧部署)
 - [文件路径](#-文件路径)
 - [潜在风险](#-潜在风险)
+
 ## 📝 简介
 本项旨在利用先进的多模态大模型 **GLM-4V-9B** 和 **Phi-3-vision** 实现对 OT-2 真实运行场景的实时帧理解异常检测。本项目整体流程涵盖了数据构造、模型微调、推理评估和端侧部署等关键环节。通过在基础模型上使用垂直领域的专用数据进行微调，以在垂域视觉语言任务中展现卓越的性能。鉴于由于OT-2实验场景中的真实数据十分稀缺采用了创新的方法来构造数据，以便让模型更好地学习相关知识和概念，并充分利用现有的数据资源。我们通过图像编辑和文本设计，创建了一个从局部到全局、从简单任务到复杂任务的逐步过渡性数据集，包括以下三个阶段的微调数据集：**局部概念对齐数据集**、**全局强引导学习数据集**和**全局弱引导学习数据集**。这三个阶段的数据集分别对应三个微调阶段，旨在逐步实现对场景物体的认知、对局部区域的理解、对全局关联的理解以及异常检测。将训练好的模型部署在NVIDIA Jetson AGX Orin平台上，实现端侧应用。
 
@@ -82,9 +55,8 @@ git clone https://www.modelscope.cn/ZhipuAI/glm-4v-9b.git
      - 从文本中获取QA和图像地址构造CSV
      - 从CSV转为GLM-4V需求的数据格式
 
-
+ 
 ![示例图片](./image/阶段一数据.png)
-
 
     
 - #### **全局强引导学习数据集** ####
@@ -94,8 +66,10 @@ git clone https://www.modelscope.cn/ZhipuAI/glm-4v-9b.git
      - 从文本中获取QA和图像地址构造CSV
      - 从CSV转为GLM-4V需求的数据格式
 
+
 ![示例图片](./image/阶段二数据1L.png)
 ![示例图片](./image/阶段二数据2L.png)
+
 
 
 - #### **全局弱引导学习数据集** ####
